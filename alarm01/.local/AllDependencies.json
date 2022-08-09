@@ -8416,11 +8416,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "calc00",
-      "projectName": "calc00",
-      "projectPath": "C:\\Users\\ritup\\projects\\examples\\calc001\\calc00\\.local",
+      "projectUniqueName": "alarm01",
+      "projectName": "alarm01",
+      "projectPath": "C:\\uipath\\projects\\examples\\alarm01\\.local",
       "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritup\\projects\\examples\\calc001\\calc00\\.local"
+      "outputPath": "C:\\uipath\\projects\\examples\\alarm01\\.local"
     },
     "frameworks": {
       "net461": {
