@@ -1,0 +1,16 @@
+.entities
+.local
+.objects
+.project
+.settings
+.templates
+.tmh
+.entities/**
+.local/**
+.objects/**
+.project/**
+.settings/**
+.templates/**
+.tmh/**
+
+
