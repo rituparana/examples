@@ -8418,9 +8418,9 @@
     "restore": {
       "projectUniqueName": "stars",
       "projectName": "stars",
-      "projectPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\stars\\.local",
+      "projectPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\stars\\.local",
       "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\stars\\.local"
+      "outputPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\stars\\.local"
     },
     "frameworks": {
       "net461": {

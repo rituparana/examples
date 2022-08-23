@@ -1,0 +1,114 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="660,886.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,822" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: git" sap:VirtualizedContainerService.HintSize="510,730" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bad0e176-d650-4538-aa26-209709409a31" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="476,435.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="test" />
+              <Variable x:TypeArguments="x:String" Name="testing" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'MINGW64:/c/Users/ritup'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="bad0e176-d650-4538-aa26-209709409a31" Text="cd projects/examples&#xD;&#xA;git log &gt; gitlog.txt&#xD;&#xA;" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="11, 45, 882, 482" FriendlyName="'MINGW64:/c/Users/ritup'" FullSelectorArgument="&lt;ctrl name='MINGW64:/c/Users/ritup' role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='MINGW64:/c/Users/ritup' role='client' automationid='' check:text='MINGW64:/c/Users/ritup' /&gt;" Guid="b539c260-3e97-4dc2-9f8d-52811eeebed2" ImageBase64="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" InformativeScreenshot="dddd43498a8994003c95d6d23ea816d9.png" ScopeSelectorArgument="&lt;wnd app='mintty.exe' cls='mintty' title='MINGW64:/c/Users/ritup' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:ReadTextFile File="{x:Null}" Content="[testing]" DisplayName="Read Text File" FileName="C:\Users\ritup\projects\examples\gitlog.txt" sap:VirtualizedContainerService.HintSize="434,80.6666666666667" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="38, 38, 930, 538" Arguments="--cd-to-home" FilePath="C:\Program Files\Git\git-bash.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAATeSURBVGhDxZldaBxVGIZXTaMEG6lVrwq90WtFwR+oWFSkIIIXFiSNu2PEDYLgrVrQb1ZNmri7lAUveueVSBBla5ReqKWYNlFC2/1JL+xdTWeFav+CxUDb4/fNzpw9e+Y780978bCz7zlzzvOyk5ndtiCEyB+Ae4Rtv42vp5ElZAIZYedmhA0zMTe31ZMWGk1klD0nA2yYmr78cUVaJ/cSbJgKgHHkhCcaRq4l2DAxffllTzAOuZVgw8TY9ssodF0RjEMuJdgwFba9D4VueQk2jAXAvSj9ylB2G0qwYSQkD/ArchOZGhq7xSXYMJS+vHqfv60l2NAIbcA/pIIl+k/fY8gPyCVEP4fjazz3jqF1ImBDjoUFcZd7DPC+tqlPsITP7Ow2HPtCmctxVVQqz9D8BbG3v1cM2FBnrim2wvfiJ2SXm4WXKOrne+fcibS9eTpXfPlqu/RJrV1qwtreWJcTG6p48scRgWzEKPGVvoYEwNLmEleQp2ncle+UhEvMEmzo48mf8OR9okpU9XUkAJPaXClf6xYrUj5BCTYk4EcxjqK6fJwSv+lrSQBeROgyo3nh8j4RJdgwQt4nrMSr+poS+kO37cv4Gi3vE1IiEHjyy4poGKYS/6HkO8q6w7fGmZkH6bXaLdmsMIehxNCbhPI+phJH5NqVyrNY6E35HplvTT6OYjcDomEwJeRBSnkfrsSgAMBu5CLygMyQWseaQrFMJVT5FUUoDYMStv0e8o2/CYo/iZ/CU3Rc6049KnN637YsFPsF+a7aKf09JGtCKVHATceQrPI+G5VF8YQr12jcrYoSuPl+5EatU5zUx4gDq+X7cKwxJGuCShzdPVKwD4tpRiQLTU7u89YbD+HGm57AjXrXep2bR9TbxZ+laAj1tjVBn0BLE8jKdbwkd+hSuOEH6ubVtvWlPsen3i2W1LkhLBVgUSwxElm4hIwFpNrFd9XNq53ivD7Hp75m7VHnmqh3Si36BCaUzfPgICfVOLtvHDfdUAR+5+YRsZ8P7eJ0AY6KEdy0qUmk5eTsotgmxKEtold5TkqtlrfQq3fHkbfN6lrxNTnHo3rmrZ04dtWfYwKv/5VDq+Ux9yRYEKO4edYSJ/HOf79Yhx3CgT+QwXPAwQfZX/A8HWv3/k33qwTeWufPWI/gt9EyZhe8MSMkT3csWk82z1hiIN+Dsygvhgr08EHmwL+GEolQ5QlZgEhZgpPnClB2LUsJXZ6QBz4JS5wyyAtxnmZ469Lfw2Dsmli3X6A8SQlOnhh64xOzhFnewZuzo37vwZ+TDnymjCcqYZInAoFPRIkw+XPiHxjn1sSxI8q8WCXC5Ak29DGUODXzrdhukBeYNbi1XByY0OaHloiSJ9hQRStxOlSe6MFH3DouDrwUmE8lzuNPTRxXS8SRJ9hQxytxMFKe6MFhbg0XBz4MzO+jlbCW48gTbGhkfWZ7qPyAPYFznU93Yn5Zm6ciS5h+/3KwoRn6igBNZnOdTaSCn9Zj4k94GI/LyAVvLISPj+GFmug/A9kwlDUYjVkiKSvi4oFYl40KG0aSf4lU8gQbxiK/EqnlCTaMTfYSmeQJNkxE+hKZ5Qk2TEzyErnIE2yYivglcpMn2DA10SVylSfYMBPmErnLE2yYHXya9r95LmGZlnDsaTwO/FNLdkThf0tnekBlfaB8AAAAAElFTkSuQmCC" InformativeScreenshot="f05c76edd331cde355aa36d2ef99b99e.png" Selector="&lt;wnd app='mintty.exe' cls='mintty' title='MINGW64:/c/Users/ritup/projects/examples' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

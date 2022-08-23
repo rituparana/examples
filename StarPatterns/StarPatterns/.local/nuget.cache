@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z56OaOgZ6lWT3jTlkyevX6SOpQ3FaXXF5QQ8PDylwBZ2IX5g3Up4y1lZWQ9rBVG8hrZB+mFyqUUX/LCk7eDKbw==",
+  "dgSpecHash": "WNFkRrs3mx++rie9gISkbCdjjFRatXZB/IwTo5JLS5wITQmS09I9NNH5X2bhm9Q4afezpj+r2U6U63QOXZvZpA==",
   "success": true,
-  "projectFilePath": "C:\\uipath\\projects\\examples\\StarPatterns\\StarPatterns\\.local\\",
+  "projectFilePath": "C:\\Users\\ritup\\projects\\examples\\StarPatterns\\StarPatterns\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\ritup\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\ritup\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",

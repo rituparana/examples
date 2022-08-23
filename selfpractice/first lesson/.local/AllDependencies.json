@@ -8418,9 +8418,9 @@
     "restore": {
       "projectUniqueName": "first lesson",
       "projectName": "first lesson",
-      "projectPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\first lesson\\.local",
+      "projectPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\first lesson\\.local",
       "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\first lesson\\.local"
+      "outputPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\first lesson\\.local"
     },
     "frameworks": {
       "net461": {

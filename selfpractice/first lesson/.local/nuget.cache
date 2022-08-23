@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ruxgkkkTcIvNiREFgCyhQQizPL4WTOt0GQU15OI0XKFBAO7A8W+b1m31bgy/vzPGG4HspOU5ouOQKLbyxaXJvg==",
+  "dgSpecHash": "IQoLZl/A9mygvXhdeLTz00z4//wtHaWiunXHFCYuoB02pwB8Op5/5ZVgUmFdl3bNzFl/LmNHADCim2hJtG0oHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\first lesson\\.local\\",
+  "projectFilePath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\first lesson\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\ritup\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\ritup\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",

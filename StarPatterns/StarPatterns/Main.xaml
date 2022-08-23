@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="660,2575.33333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="602.666666666667,2575.33333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -68,25 +68,14 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="609.333333333333,2510.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="i">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="nstars">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="j">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="current_row" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="total_records" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="star_location" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -95,7 +84,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="567.333333333333,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="how many rows?" Title="patterns">
       <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:Int32">[nstars]</OutArgument>
+        <OutArgument x:TypeArguments="x:Int32">[total_records]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
     <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="567.333333333333,2134" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="35100c66-73b0-4e72-8dbd-9fc065e8057d" Version="V2">
@@ -108,10 +97,18 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="491.333333333333,184" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="35100c66-73b0-4e72-8dbd-9fc065e8057d" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(del)][u(hk)]" Version="V1" />
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[i &lt; nstars]" DisplayName="While" sap:VirtualizedContainerService.HintSize="491.333333333333,1276.66666666667" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="491.333333333333,184" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="35100c66-73b0-4e72-8dbd-9fc065e8057d" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(del)][u(hk)]" Version="V1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[current_row &lt; total_records]" DisplayName="While" sap:VirtualizedContainerService.HintSize="491.333333333333,1276.66666666667" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="454.666666666667,1107.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -121,13 +118,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Assign sap:VirtualizedContainerService.HintSize="412.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_4">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                      <OutArgument x:TypeArguments="x:Int32">[star_location]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:Int32">0</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[j &lt; i]" DisplayName="While" sap:VirtualizedContainerService.HintSize="412.666666666667,567.333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[star_location &lt; current_row]" DisplayName="While" sap:VirtualizedContainerService.HintSize="412.666666666667,567.333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                     <ui:InterruptibleWhile.Body>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,398" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
@@ -142,14 +139,20 @@
                         </uix:NKeyboardShortcuts>
                         <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
-                            <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                            <OutArgument x:TypeArguments="x:Int32">[star_location]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:Int32">[j+1]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32">[star_location+1]</InArgument>
                           </Assign.Value>
                         </Assign>
                       </Sequence>
                     </ui:InterruptibleWhile.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </ui:InterruptibleWhile>
                   <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'editable text'" sap:VirtualizedContainerService.HintSize="412.666666666667,204" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="35100c66-73b0-4e72-8dbd-9fc065e8057d" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
                     <uix:NKeyboardShortcuts.Target>
@@ -158,10 +161,10 @@
                   </uix:NKeyboardShortcuts>
                   <Assign sap:VirtualizedContainerService.HintSize="412.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                      <OutArgument x:TypeArguments="x:Int32">[current_row]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                      <InArgument x:TypeArguments="x:Int32">[current_row+1]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
@@ -171,6 +174,12 @@
               <uix:NKeyboardShortcuts.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="11, 75, 848, 484" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="f01d95df-7940-4019-9cf1-c6a52468de47" ImageBase64="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" InformativeScreenshot="21e0d533dd1a169e110850f09d28b956.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
               </uix:NKeyboardShortcuts.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
           </Sequence>
         </ActivityAction>

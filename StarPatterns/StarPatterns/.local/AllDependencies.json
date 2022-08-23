@@ -8418,9 +8418,9 @@
     "restore": {
       "projectUniqueName": "StarPatterns",
       "projectName": "StarPatterns",
-      "projectPath": "C:\\uipath\\projects\\examples\\StarPatterns\\StarPatterns\\.local",
+      "projectPath": "C:\\Users\\ritup\\projects\\examples\\StarPatterns\\StarPatterns\\.local",
       "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\uipath\\projects\\examples\\StarPatterns\\StarPatterns\\.local"
+      "outputPath": "C:\\Users\\ritup\\projects\\examples\\StarPatterns\\StarPatterns\\.local"
     },
     "frameworks": {
       "net461": {

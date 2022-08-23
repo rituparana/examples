@@ -8418,9 +8418,9 @@
     "restore": {
       "projectUniqueName": "cal00",
       "projectName": "cal00",
-      "projectPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\cal00\\.local",
+      "projectPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\cal00\\.local",
       "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritup\\OneDrive\\Documents\\UiPath\\cal00\\.local"
+      "outputPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\cal00\\.local"
     },
     "frameworks": {
       "net461": {
