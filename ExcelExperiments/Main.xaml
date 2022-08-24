@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,700.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="Thurs">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve">10	350	3500</Literal>
+        </Variable.Default>
+      </Variable>
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">0,2.66666666666666</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">60,40 160,40</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">160,13.6666666666667</av:Point>
+          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">260,66.3333333333334 260,116.333333333333</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Users\ranajit jana\expenditure.xlsx" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:StartProcess>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">160,116.333333333333</av:Point>
+              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">260,169 260,219</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: expenditure - Excel" sap:VirtualizedContainerService.HintSize="510,1766" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="c3f19782-23b0-4a9a-aa51-ef8385564ae5" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1471.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click '10'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3f19782-23b0-4a9a-aa51-ef8385564ae5" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="187, 480, 53, 29" ElementType="Cell" FriendlyName="'10'" FullSelectorArgument="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia automationid='B5' name='B5' role='item' tableCol='2' tableRow='5' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia automationid='B5' name='B5' role='item' /&gt;" Guid="e18600c9-84aa-4344-a7cc-3d5bf914d471" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAhCAYAAABjnQNzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEWSURBVFhH7ZbRDYQwCIY7FwMxT6fpMn1xEw60tVrxci8XW+RPUAs16QdoCMRalkVupnRkCrKwbu+opFwcclI5pBU5pBU55CPKkRAChYCUiuuqTAmBIMi+zQB4fy7hTkNB5gj7oe8hM8U1CWwAhIiclPoeUFRAB4FsB4eYyrMOuScCz9GcUPWLxoDkFoW9ChVYg6wxrWL37w1SyaO+QSbCtU0j77oqoZ6AuSDXinNMaUlRbeU+7JDPyCFfAMke+z+eXxKgxCaDbC0JXbmqf9xhgMGSjGfFtpmUZ9Pq4ymoIdWKsfG8uo11ZX2TmEEgDwdXrTt85tGPB/QWl4To36loEMj/yiGtyCGt6H2QsrBu3q4zqzERfQAC8udVCP4FyAAAAABJRU5ErkJggg==" InformativeScreenshot="0b148e180101628ac46e8f2af6a2967a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='expenditure - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][d(shift)][k(right)][u(shift)][u(hk)][d(hk)][d(shift)][k(right)][u(shift)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V1" />
+                  <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Edge: (3) WhatsApp" sap:VirtualizedContainerService.HintSize="434,954.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="ecfa1224-b332-4dde-b3c1-3ff1f46e88eb" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,736.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Oishi N Troyi'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecfa1224-b332-4dde-b3c1-3ff1f46e88eb" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://web.whatsapp.com/" DesignTimeRectangle="127, 796, 452, 34" ElementType="Text" FriendlyName="'Oishi N Troyi'" FullSelectorArgument="&lt;webctrl aaname='Oishi N Troyi' parentid='pane-side' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Oishi N Troyi' parentid='pane-side' tag='SPAN' type='' class='ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr' check:innerText='Oishi N Troyi' /&gt;" Guid="88a7a748-1336-4a39-ac5e-35f8d95ae581" ImageBase64="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" InformativeScreenshot="957d7605168577947b6ce0bfb9f588b9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(3) WhatsApp' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type a message'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ecfa1224-b332-4dde-b3c1-3ff1f46e88eb" Text="[Thurs]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://web.whatsapp.com/" DesignTimeRectangle="841, 941, 995, 63" FriendlyName="'Type a message'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div' parentid='main' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tabindex='-1' tag='DIV' class='p3_M1' aaname='' check:innerText='Type a message' /&gt;" Guid="35381c51-6afc-4809-a118-7a5bcf46d1cb" ImageBase64="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" InformativeScreenshot="dbc60fce6f297c2a71f2135e7939a66b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='(3) WhatsApp' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,184" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="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" InformativeScreenshot="d8092b27078a0b5f33b7da614dbe47cf.png" Selector="&lt;html app='msedge.exe' title='(3) WhatsApp' /&gt;" Url="https://web.whatsapp.com/" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-11, -11, 1942, 1030" Arguments="c:\users\ranajit jana\expenditure.xlsx" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAToSURBVGhD7ZpdTFtlGMfRacykPe2g0HJhA2rUbBmTlg8HdJOJg3XAWIjZ0u0CP4Yoc07GxoDNtcpoi5u7YHJhkI2yxUtiDJlG41TmpR/xQi80S+aFeqVLNHr5+Lxf55y2b+GcdqfFhCf5BQ5Nyu//9N/3XLRFa/M/nLuQu5F1BYL8b+JgfqoSfeGq+T7IFf+NSO58GY5wLcOzTiaTDVKhLECne5iasVkvk8kGmUw2oJPC1IyNTSaTDTKZbEAnN1MzNqsxgIepGZu1AAKZTDagk8kACRQwgkRaj0wmG9DJXIDK954Dw8w+D1Vzh6SBZDLZgE6eoorJveGK+F6oiHdDRawbPLE9jGgXxU2Y6KSUn+1gjO+mlI0HoexNwi5wvUFoR9qgNMKoON+jBbEsABFHVPHYMuJnJeJUnogjXLw0vJNScuZp8E4dhMpLGCKhhZDJZAMN4EnZOhWPMnH3hBBnW9fEg3LxiCbOaAWlvwEcw9vAOfYkOE+1UPSvRi7wACvXhYovW5d08Q2vP0Wxv1AHjqEAOEetCpBJXFYXSc9ZXfTiXP70DnAi9mf94DjWDM6R7dYEEOKpdemeH4bJL64iVyipdem6PATxzxMQv56AgYVJbesoTeVPEVrA1usDx6ClAZLFRV18U71w+9+/QczhD84l1eWXP3/njwB0zg5qW+fitPOI5QGEeLmk52TzYoiw6PnotWn+V4DFH26odWHiTN6BnXeMbs9DgBV6rt/0wMJbUBXtxlfmL3pNflafD6GUbutc3IHCBMsDMPEMxyJunHRdzC0ME7s+x68AYp9d1sTp1lFayJ/cRo/PPATQbV2IpxyLiz9+xZW1+f7Xn9LqoopT+QAoJwLWB9DXRX6et8KWt0NqbcR0zBxNqYsm7kBx5UQzKMeb8xBAV5dM53ngnUNcW5vQlTEuzrdOxOnWmbhyvAmUoSYobdsE5c/4wROqB8/BBooIkis0QPLWW7k8EdeOxaWb33Ft9sYlc+uP38AbCdKei7owcQTFlWOERusDJNcFpcV5zo/FkcWLVJjM1a+vQfTTS/wKIPrJLBMXWyfiVL4RlMFGsA9uzUeA5Lqo5zlSfW5/0pG5Ob4PvOFg0vuh6UKvVNz+GnL0CesDCHFRF/ogPxaXbn7LNdm2RV3I72KWfv6GiSN6ccqrDXkIIBEnx2Jofowrsu17z+xSe/7A6Xa4/Y/2KvS/P87EhTyKU47UWx+AXkjO85MfTtFNE0JzI2k9D04PwMTHMzDx0QwML1xIE7e9ghyuy0MAsvWU27/0WFym56q8Ks7kbQO11geg4vq7aMZjMXPP7UcQIs63TsQpL/vzEECI862vdCzKeq6KC3kUt73kh+J+Xx4CiLrcEXEh70P5Gih+sQZK29MD3ClYgOFAWBXnt//l6yLEubyuLmLrRLy4rwaUnk3g6qi2NoCJsSm1lWCI+kpwND0MJTs3Qtmex8G9r3Z1BNjQ8igYYsdjUNK2EVyduP0eH7j314HnwCoI4Nq9GVakA0Fxsnkqb9H2CehkLgDpslGION08kT8gF8gVdDIXgMqYwYLa6EEnkwEkT1JI0GktQEFBJ1Mf8t3v6toyLXuiQoA3yHfRycnUjM19yENIA7K1wBCHR5D1iOEh30+wI17kwQJDHMiH3OR7E6aGhCAf799bYIgDuhQV/QdKx+9+xO860AAAAABJRU5ErkJggg==" InformativeScreenshot="b87e31398cd2fa3cfb10448bc685b7c6.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='expenditure - Excel' /&gt;" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">160,219</av:Point>
+                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Thurs]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MessageBox>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+  </Flowchart>
+</Activity>
