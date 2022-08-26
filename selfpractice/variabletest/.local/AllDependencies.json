@@ -8412,15 +8412,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ritup\\.nuget\\packages\\": {}
+    "C:\\Users\\ranajit jana\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "variabletest",
       "projectName": "variabletest",
-      "projectPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\variabletest\\.local",
-      "packagesPath": "C:\\Users\\ritup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritup\\projects\\examples\\selfpractice\\variabletest\\.local"
+      "projectPath": "C:\\Users\\ranajit jana\\Documents\\GitHub\\examples\\selfpractice\\variabletest\\.local",
+      "packagesPath": "C:\\Users\\ranajit jana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ranajit jana\\Documents\\GitHub\\examples\\selfpractice\\variabletest\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8446,7 +8446,7 @@
             "version": "[22.4.5, 22.4.5]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\ritup\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\ranajit jana\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
