@@ -1,0 +1,20 @@
+[v0.1]
+read xlsx file every n minutes - poc (proof of concept) / prototype
+find course/groups that changed
+assign above to chngd_course_lst
+for each course in chngd_course_lst
+do
+  send email to course
+
+[v0.1.5]
+read xlsx file every n minutes - poc (proof of concept) / prototype
+use xl formulae to generate strings
+upload schedule to drive
+broadcast link on all groups
+
+[v0.2]
+check file (.xlsx) for changes
+if changed:
+  broadcast only to the affecting actors/participants
+else:
+  do nothing
