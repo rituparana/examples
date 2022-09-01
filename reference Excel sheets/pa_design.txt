@@ -1,0 +1,39 @@
+[v0.1]
+read xlsx file every n minutes - poc (proof of concept) / prototype
+find course/groups that changed
+assign above to chngd_course_lst
+for each course in chngd_course_lst
+do
+  send email to course
+
+[v0.1.5]
+read xlsx file every n minutes - poc (proof of concept) / prototype
+use xl formulae to generate strings
+upload schedule to drive
+broadcast link on all groups
+
+[v0.2]
+check file (.xlsx) for changes
+if changed:
+  broadcast only to the affecting actors/participants
+else:
+  do nothing
+
+[v0.2.5]
+loop on xl every T seconds
+multiple datatable comparison too complex for current scenario
+instead use large delay for now (12h, 24h)
+for each row in dt0:
+  for each cell
+
+[v0.2.6]
+loop on xl every T seconds
+  - read timetable into datatable
+nested for loop monstrously complicated
+instead use columnar structure in excel (DONE)
+gmail broadcast from excel names (TODO)
+  - module 1 (name: mailer)
+    - read column from excel
+    - send mail to all email ids in column
+excel filesystem data model is finally satisfactory
+  - directory to contain 1 xlsx per course (sheets: email,etc,etc)
