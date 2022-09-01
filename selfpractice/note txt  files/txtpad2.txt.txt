@@ -1,9 +1,0 @@
-Microsoft Windows [Version 10.0.19044.1889]
-(c) Microsoft Corporation. All rights reserved.
-
-C:\Users\ritup\projects\examples\commandrTemplate>java -version
-java version "1.8.0_291"
-Java(TM) SE Runtime Environment (build 1.8.0_291-b10)
-Java HotSpot(TM) Client VM (build 25.291-b10, mixed mode)
-
-C:\Users\ritup\projects\examples\commandrTemplate>
