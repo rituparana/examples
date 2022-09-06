@@ -1,0 +1,23 @@
+﻿    Name,Type 1,Type 2,HP,Attack,Defense
+    Abra,Psychic,,25    ,20,15
+    Kadabra,Psychic,,40    ,35,30
+    Alakazam,Psychic,,55    ,50,45
+    Machop,Fighting,,70    ,80,50
+    Machoke,Fighting,,80    ,100,70
+    Machamp,Fighting,,90    ,130,80
+    Bellsprout,Grass,Poison,50    ,75,35
+    Weepinbell,Grass,Poison,65    ,90,50
+    Victreebel,Grass,Poison,80    ,105,65
+    Tentacool,Water,Poison,40    ,40,35
+    Tentacruel,Water,Poison,80    ,70,65
+    Geodude,Rock,Ground,40    ,80,100
+    Graveler,Rock,Ground,55    ,95,115
+    Golem,Rock,Ground,80    ,120,130
+    Ponyta,Fire,,50    ,85,55
+    Rapidash,Fire,,65    ,100,70
+    Slowpoke,Water,Psychic,90    ,65,65
+    SlowbroMega Slowbro,Water,Psychic,95    ,75,110
+    Magnemite,Electric,Steel,25    ,35,70
+    Magneton,Electric,Steel,50    ,60,95
+    Farfetch'd,Normal,Flying,52    ,65,55
+  ,,,,,
