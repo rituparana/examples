@@ -1,0 +1,59 @@
+Email Automation
+
+uipath supports several ways of sending emails
+
+Exchange					: microsoft mail server platform
+						  catering to large scale busniess 
+						  need like scheduling meetings,
+
+IBM notes					: used to retrive messages from 
+						  IBM notes,it works only with
+						  IBM notes only.
+
+IMAP (internet message access protocol)	 :support multiple 
+							  device access
+
+Outlook					: email client used by the busniess
+						  by microsoft exchange server
+						  uipath supports via API for its
+						  desktop application.
+POP3 (post office protocol)		:Oldest but still supports
+						 most email severs.bility to
+ 						 download emails locally into 
+						 the machines.
+
+SMTP (simple mail transfer protocol):trasmit messages 
+						 from source to destination.
+						 Ability to queup messages 
+						 at receving ends.
+						 Limited methodology.
+						 
+
+SMTP – It is short for Simple Mail Transfer Protocol and is a basic 
+	protocol that only allows sending messages
+POP3 – It stands for Post Office Protocol and is an older version
+	 of a protocol for reading messages. Although this protocol is 
+	almost obsolete, most mail servers supports it.
+IMAP - Internet Message Access Protocol only helps to receive 
+	messages and also provides additional features such as “Read” and “Move” emails between folders.
+Exchange - This is a Microsoft Enterprise email solution
+	 which is integrated within UiPath flawlessly and allows the 
+	user to perform multiple actions such as Send, Delete, Move, and Get Email messages.
+Outlook – This activity uses the API of the desktop application
+	 and hence does not require to set up users, servers, or other
+	 advanced details. This activity integrates Outlook API such that UiPath 
+	can use the already logged-in Outlook account.
+IBM Notes – This uses the IBM notes desktop API to interact with the
+	 application and perform send, receive, move, and reading activities.
+	 Similar to Outlook, this does not require the user to set up servers, 
+	users, and works with the logged-in account.
+Save Mail Message – Saves Emails on local disk
+Save Attachments – Downloads attachments and saves them to local disk
+
+
+four activities in UiPath that allow checking received Emails 
+Get IMAP mail messages, Get POP3 Mail Messages, Get Outlook Mail Messages, 
+And Get Exchange Mail Messages, and Finally Get IBM Notes Mail Messages.
+
+
+
