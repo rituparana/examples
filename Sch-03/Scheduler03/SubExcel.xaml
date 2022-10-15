@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SubExcel" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="710,1067" sap2010:WorkflowViewState.IdRef="SubExcel_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SubExcel" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="710.666666666667,1066.66666666667" sap2010:WorkflowViewState.IdRef="SubExcel_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -76,10 +76,9 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="SubExcel" sap:VirtualizedContainerService.HintSize="720,1002" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="SubExcel" sap:VirtualizedContainerService.HintSize="720.666666666667,1002" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="coursedt" />
       <Variable x:TypeArguments="x:String" Name="scdt" />
@@ -92,7 +91,7 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
         <x:Double x:Key="Height">966</x:Double>
         <x:Double x:Key="Width">686.3478260869565</x:Double>
@@ -105,11 +104,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">300,179.5 300,229.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
@@ -152,11 +151,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,229.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52</av:Size>
+              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">300,281.5 300,324</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="enter course string" Title="course selection">
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="enter course string" Title="course selection">
             <ui:InputDialog.Result>
               <OutArgument x:TypeArguments="x:String">[usrcourse]</OutArgument>
             </ui:InputDialog.Result>
@@ -171,11 +170,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">200,324</av:Point>
-                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                  <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
                   <av:PointCollection x:Key="ConnectorLocation">300,376 300,406 290,406 290,419</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[coursedt]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupColumnIndex="[0]" LookupValue="[usrcourse]" TargetColumnIndex="[1]">
+              <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[coursedt]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupColumnIndex="[0]" LookupValue="[usrcourse]" TargetColumnIndex="[1]">
                 <ui:LookupDataTable.CellValue>
                   <OutArgument x:TypeArguments="x:String">[resvar]</OutArgument>
                 </ui:LookupDataTable.CellValue>
@@ -190,11 +189,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">175,419</av:Point>
-                      <av:Size x:Key="ShapeSize">230,62</av:Size>
+                      <av:Size x:Key="ShapeSize">229.333333333333,62.6666666666667</av:Size>
                       <av:PointCollection x:Key="ConnectorLocation">290,481 290,531</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[resvar]">
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[resvar]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -206,11 +205,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">190,531</av:Point>
-                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">290,583 290,633</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
                         <ueab:ExcelProcessScopeX.Body>
                           <ActivityAction x:TypeArguments="ui:IExcelProcess">
                             <ActivityAction.Argument>
@@ -253,28 +252,28 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">190,633</av:Point>
-                              <av:Size x:Key="ShapeSize">200,52</av:Size>
+                              <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="510,1262" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="42d2d001-d165-425a-beeb-e29d8024c854" Version="V2">
+                          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="510,1276" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="42d2d001-d165-425a-beeb-e29d8024c854" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,970" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,981.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[maildt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,876" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[maildt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,886.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                                     <ui:ForEachRow.Body>
                                       <ActivityAction x:TypeArguments="sd:DataRow">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rx" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,759" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,768.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="cellval" />
                                           </Sequence.Variables>
@@ -283,17 +282,17 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,188" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[rx]">
+                                          <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[rx]">
                                             <ui:GetRowItem.Value>
                                               <OutArgument x:TypeArguments="x:String">[cellval]</OutArgument>
                                             </ui:GetRowItem.Value>
                                           </ui:GetRowItem>
-                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="42d2d001-d165-425a-beeb-e29d8024c854" Text="[cellval]" Version="V1">
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="42d2d001-d165-425a-beeb-e29d8024c854" Text="[cellval]" Version="V1">
                                             <uix:NTypeInto.Target>
                                               <uix:TargetAnchorable DesignTimeRectangle="6, 76, 804, 461" ElementType="InputBox" FriendlyName="'RichEditD2DPT'" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="904befe6-ef93-4dbe-ab5b-2ecfe63a6f94" ImageBase64="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" InformativeScreenshot="b72c2f2da0fa8598d9caa7d31acc9d4e.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
                                             </uix:NTypeInto.Target>
                                           </uix:NTypeInto>
-                                          <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+                                          <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,184" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
                                         </Sequence>
                                       </ActivityAction>
                                     </ui:ForEachRow.Body>
@@ -302,7 +301,7 @@
                               </ActivityAction>
                             </uix:NApplicationCard.Body>
                             <uix:NApplicationCard.TargetApp>
-                              <uix:TargetApp Area="155, 52, 816, 575" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2207.11.0_x64__8wekyb3d8bbwe\Notepad\notepad.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="a1b37a325d82f5131fe8b6a7c39968e6.png" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" />
+                              <uix:TargetApp Area="155, 52, 816, 575" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2207.11.0_x64__8wekyb3d8bbwe\Notepad\notepad.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="a1b37a325d82f5131fe8b6a7c39968e6.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" />
                             </uix:NApplicationCard.TargetApp>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
