@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="fastprocess" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,700.666666666667" sap2010:WorkflowViewState.IdRef="fastprocess_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="fastprocess" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="805.333333333333,710.666666666667" sap2010:WorkflowViewState.IdRef="fastprocess_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="fastprocess" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="fastprocess" sap:VirtualizedContainerService.HintSize="634,646" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -91,16 +91,16 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,127.166666666667</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+          <av:Size x:Key="ShapeSize">200,62.6666666666667</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="586,2288.66666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,2591.33333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,2202.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2495.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="studentDT" />
               </Sequence.Variables>
@@ -109,14 +109,14 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[studentDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="uipathauto" WorkbookPath="C:\Users\ritup\projects\examples\reference Excel sheets\SchoolReport\classdetails.xlsx" />
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[studentDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,1984" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[studentDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="530,96.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="uipathauto" WorkbookPath="C:\Users\ritup\projects\examples\reference Excel sheets\SchoolReport\classdetails.xlsx" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[studentDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,2236.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1868.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,2111.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Double" Name="localmarks" />
                         <Variable x:TypeArguments="x:String" Name="STname" />
@@ -130,13 +130,13 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="marks" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="marks" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,200" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:Double">[localmarks]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;start -&gt;&quot; + System.DateTime.Now.ToString(&quot;hh:mm:ss.&quot;) + System.DateTime.Now.Millisecond.ToString]" />
-                      <Flowchart DisplayName="Flowchart-grade" sap:VirtualizedContainerService.HintSize="434,52.6666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,72.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;start -&gt;&quot; + System.DateTime.Now.ToString(&quot;hh:mm:ss.&quot;) + System.DateTime.Now.Millisecond.ToString]" />
+                      <Flowchart DisplayName="Flowchart-grade" sap:VirtualizedContainerService.HintSize="434,62.6666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                         <Flowchart.Variables>
                           <Variable x:TypeArguments="x:String" Name="reptCardhtml" />
                           <Variable x:TypeArguments="x:Object" Name="stname" />
@@ -255,28 +255,28 @@
                         <x:Reference>__ReferenceID2</x:Reference>
                         <x:Reference>__ReferenceID3</x:Reference>
                       </Flowchart>
-                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;stop -&gt;&quot; + System.DateTime.Now.ToString(&quot;hh:mm:ss.&quot;) + System.DateTime.Now.Millisecond.ToString]" />
-                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="name" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,72.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;stop -&gt;&quot; + System.DateTime.Now.ToString(&quot;hh:mm:ss.&quot;) + System.DateTime.Now.Millisecond.ToString]" />
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="name" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,200" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:String">[STname]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="grade" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="grade" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,200" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:String">[STgrade]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="email" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[CurrentRow]">
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="email" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,200" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[CurrentRow]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:String">[STemail]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="reportfile" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[CurrentRow]">
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="reportfile" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,200" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[CurrentRow]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:String">[STreport]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <umab:CreateHtmlContent DisplayName="Create HTML Content" sap:VirtualizedContainerService.HintSize="434,153.333333333333" HtmlContent="[reportcardhtml]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_1">
+                      <umab:CreateHtmlContent DisplayName="Create HTML Content" sap:VirtualizedContainerService.HintSize="434,163.333333333333" HtmlContent="[reportcardhtml]" sap2010:WorkflowViewState.IdRef="CreateHtmlContent_1">
                         <umab:CreateHtmlContent.HtmlContentArg>
                           <umabh:HtmlContentArgument FilePath=".data/HtmlContent2.html">
                             <umabh:HtmlContentArgument.RuntimeImages>
@@ -293,7 +293,8 @@
                           </umabh:HtmlContentArgument>
                         </umab:CreateHtmlContent.HtmlContentArg>
                       </umab:CreateHtmlContent>
-                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="reportfile" sap:VirtualizedContainerService.HintSize="434,135.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[reportcardhtml]" />
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,72.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[STreport]" />
+                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[STreport]" sap:VirtualizedContainerService.HintSize="434,145.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[reportcardhtml]" />
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEachRow.Body>
